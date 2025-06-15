@@ -1,0 +1,18 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aphatheology <aphatheology@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "generate:proto": "npx protoc --ts_proto_out=./types/ ./proto/*.proto --ts_proto_opt=nestJs=true",
+    "generate:prisma": "prisma generate"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15",
+    "@prisma/client": "^6.9.0",
+    "prisma": "^6.9.0",
+    "ts-proto": "^2.7.5"
+  }
+}
